@@ -54,8 +54,17 @@ class AuthController extends Controller
      * @param  array  $data
      * @return User
      */
-    protected function create(array $data)
-    {
+    protected function create(array $data){
+
+	$testvar = 2;
+	$test2 = 1;
+
+	$test2."dasd";
+
+	if(  $test2 == 3){
+			echo 'PSR2 issues'; echo 'error';
+}
+
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
